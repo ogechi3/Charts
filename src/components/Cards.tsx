@@ -14,7 +14,7 @@ const Cards = () => {
               {card.title}
             </p>
             <h1 className="text-2xl font-bold">{card.amount}</h1>
-            <div className="flex flex-row gap-3 ">
+            <div className="flex flex-row gap-3 items-center ">
               <div className="flex flex-row items-center p-1 bg-[#E0ECFC] rounded-[4px]">
                 <BiUpArrowCircle/>
                 +12%

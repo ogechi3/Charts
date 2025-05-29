@@ -1,10 +1,12 @@
 import React from 'react'
 import { BiUpArrowCircle } from 'react-icons/bi';
+import ChartToggle from './ChartToggle';
+import DonutChart from './PieChart';
 
 const Cards = () => {
   return (
-    <div className="">
-      <div className="absolute z-10 items-center hidden w-full grid-cols-4 gap-8 px-5 md:grid top-46 ">
+    <div className="px-4 ">
+      <div className="z-10 w-full gap-8 space-y-5 lg:px-5 lg:grid lg:grid-cols-4 ">
         {cards.map((card) => (
           <div
             key={card.title}
@@ -14,7 +16,7 @@ const Cards = () => {
               {card.title}
             </p>
             <h1 className="text-2xl font-bold">{card.amount}</h1>
-            <div className="flex flex-row gap-3 items-center ">
+            <div className="flex flex-row items-center gap-3 ">
               <div className="flex flex-row items-center p-1 bg-[#E0ECFC] rounded-[4px]">
                 <BiUpArrowCircle/>
                 +12%
@@ -25,6 +27,10 @@ const Cards = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="grid items-center grid-cols-1 gap-4 px-8 lg:grid-cols-2">
+        <ChartToggle/>
+        <DonutChart/>
       </div>
     </div>
   );

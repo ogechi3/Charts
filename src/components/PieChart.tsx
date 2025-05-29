@@ -14,8 +14,10 @@ const DonutChart = () => {
   return (
     <div className="">
       <div className="">
-        <h1 className="font-bold leading-5 ">Revenue Source</h1>
-        <div className="flex flex-row items-center h-full gap-3 py-5 bg-white rounded-md ring-1 ring-slate-500 shadow-[0_3px_10px_rgb(0,0,0,0.2)] w-full">
+        <h1 className="m-5 text-base font-bold leading-5 text-center md:text-xl md:text-left ">
+          Revenue Source
+        </h1>
+        <div className="flex flex-row items-center  gap-3 py-5 bg-white rounded-md ring-1 ring-slate-500 shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-100%">
           <div className="w-full h-[300px] relative flex items-center justify-center">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>

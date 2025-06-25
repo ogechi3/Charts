@@ -14,7 +14,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import DonutChart from "./PieChart";
+
 
 const ChartToggle = () => {
   const [chartType, setChartType] = useState<"bar" | "line">("bar");
@@ -89,9 +89,7 @@ const ChartToggle = () => {
           </ResponsiveContainer>
         </div>
       </div>
-      {/* <div className="">
-          <DonutChart />
-        </div> */}
+      
     </div>
   );
 };
